@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
     <!-- CSS of REGISTRATION -->
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -23,74 +23,94 @@
     <!----START of BOOSTRAP TEMPLATE ---------------------->
     <div class="container">
         <div class="header clearfix">
-            <!--
             <nav>
                 <ul class="nav nav-pills pull-right">
                     <li role="presentation" class="active"><a href="#">Home</a></li>
                     <li role="presentation"><a href="#">About</a></li>
                     <li role="presentation"><a href="#">Contact</a></li>
                 </ul>
-            </nav>^
-            -->
-            <h3 class="text-muted">Teennight 2017</h3>
+            </nav>
+            <h3 class="text-muted">Project name</h3>
         </div>
 
         <div class="jumbotron">
-            <p><a class="btn btn-lg btn-success" href="#" role="button">JETZT ANMELDEN</a></p>
+            <h1>Jumbotron heading</h1>
+            <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor
+                mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
         </div>
-        
+
         <div class="row marketing">
-            <h4><a href="/flyer/2017_Teennight_web.pdf">Flyer downloaden!</a></h4>
+            <div class="col-lg-6">
+                <h4>Subheading</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+                <h4>Subheading</h4>
+                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+                <h4>Subheading</h4>
+                <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            </div>
+
+            <div class="col-lg-6">
+                <h4>Subheading</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+                <h4>Subheading</h4>
+                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+                <h4>Subheading</h4>
+                <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            </div>
         </div>
-
-        <div class="row marketing"> <!-- REGISTRATION START -->
-            <div id="busy-overlay" class="busy-overlay">
-                <div class="gps_ring"></div>
-            </div>
-            <div class="step-counter-box">
-                <div id="step-1" class="step-counter-step step-counter-active">
-                    <div class="step-content">1</div>
-                </div>
-                <div id="step-2" class="step-counter-step">
-                    <div class="step-content">2</div>
-                </div>
-                <div id="step-3" class="step-counter-step">
-                    <div class="step-content">3</div>
-                </div>
-            </div>
-            <form id="registration-form" class="form-registration">
-                <h2 class="form-registration-heading">Gib' deine Daten an: </h2>
-                <label for="firstname" class="sr-only">Vorname</label>
-                <input id="firstname" name="firstname" class="form-control" placeholder="Vorname">
-                <label for="lastname" class="sr-only">Nachname</label>
-                <input id="lastname" name="lastname" class="form-control" placeholder="Nachname">
-                <label for="city" class="sr-only">Ort der Jugendarbeit / Heimatort</label>
-                <input id="city" name="city" class="form-control" placeholder="Ort der Jugendarbeit / Heimatort">
-                <label for="birthday" class="sr-only">Geburtstdatum</label>
-                <input type="text" id="birthday" name="birthday" class="form-control" placeholder="Geburtsdatum">
-                <label for="emailaddress" class="sr-only">E-Mail-Adresse</label>
-                <input type="email" id="emailaddress" name="emailaddress" class="form-control" placeholder="E-Mail-Adresse">
-                <label for="emailaddress" class="sr-only">Notfallrufnummer in der Nacht (bspw. Eltern)</label>
-                <input id="emergency_contact" name="emergency_contact" class="form-control" placeholder="Notfallrufnummer in der Nacht">
-
-                <button class="btn btn-lg btn-success btn-block" id="submit" type="submit">Anmeldung abschicken!</button>
-            </form>
-            <div id="confirmation" class="confirmation form-registration">
-                <h2>Cool...</h2>
-                <span id="placeholder-name">...</span>, du hast es fast geschafft! <br> In kürze bekommst du eine E-Mail,
-                in der steht, wie es weitergeht!
-            </div>
-        </div> <!-- REGISTRATION END -->
-
 
         <footer class="footer">
-            <p>&copy; 2017 - Südwestdeutscher Jugendverband "Entscheiden für Christus" - <a href="http://www.swdec.de/menue/impressum/">Impressum</a></p>
+            <p>&copy; 2016 Company, Inc.</p>
         </footer>
 
     </div>
+    <!----END of BOOSTRAP TEMPLATE ---------------------->
 
 
 
+    <!----start of REGISTRATION---------------------->
+    <div id="busy-overlay" class="busy-overlay">
+        <div class="gps_ring"></div>
+    </div>
+    <div class="step-counter-box">
+        <div id="step-1" class="step-counter-step step-counter-active">
+            <div class="step-content">1</div>
+        </div>
+        <div id="step-2" class="step-counter-step">
+            <div class="step-content">2</div>
+        </div>
+        <div id="step-3" class="step-counter-step">
+            <div class="step-content">3</div>
+        </div>
+    </div>
+    <form id="registration-form" class="form-registration">
+        <h2 class="form-registration-heading">Gib' deine Daten an: </h2>
+        <label for="firstname" class="sr-only">Vorname</label>
+        <input id="firstname" name="firstname" class="form-control" placeholder="Vorname">
+        <label for="lastname" class="sr-only">Nachname</label>
+        <input id="lastname" name="lastname" class="form-control" placeholder="Nachname">
+        <label for="city" class="sr-only">Ort der Jugendarbeit / Heimatort</label>
+        <input id="city" name="city" class="form-control" placeholder="Ort der Jugendarbeit / Heimatort">
+        <label for="birthday" class="sr-only">Geburtstdatum</label>
+        <input type="text" id="birthday" name="birthday" class="form-control" placeholder="Geburtsdatum">
+        <label for="emailaddress" class="sr-only">E-Mail-Adresse</label>
+        <input type="email" id="emailaddress" name="emailaddress" class="form-control" placeholder="E-Mail-Adresse">
+        <label for="emailaddress" class="sr-only">Notfallrufnummer in der Nacht (bspw. Eltern)</label>
+        <input id="emergency_contact" name="emergency_contact" class="form-control" placeholder="Notfallrufnummer in der Nacht">
+
+        <button class="btn btn-lg btn-success btn-block" id="submit" type="submit">Anmeldung abschicken!</button>
+    </form>
+
+    <div id="confirmation" class="confirmation form-registration">
+        <h2>Cool...</h2>
+        <span id="placeholder-name">...</span>, du hast es fast geschafft! <br> In kürze bekommst du eine E-Mail, in der
+        steht, wie es weitergeht!
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>

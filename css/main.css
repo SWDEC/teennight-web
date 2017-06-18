@@ -1,5 +1,3 @@
-/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -95,17 +93,207 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* COMING FROM REGISTRATION - NNEEDS REWORK! */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #262626;
+
+}
+
+.form-registration {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-registration .form-registration-heading{
+  margin-bottom: 10px;
+  color: #CCC;
+}
+
+.form-registration .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-registration .form-control:focus {
+  z-index: 2;
+}
+.form-registration input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
 
 
+.step-counter-box {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.step-counter-step {
+  color: #555;
+  font-size: 4em;
+  background-color: #333;
+  border: 0px solid;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  float:left;
+}
+
+.step-counter-active {
+  color: #DDD;
+  background-color: #5cb85c;
+}
+
+.step-content {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, 10%);
+  text-align: center;
+  width: 100px;
+}
+
+.busy-overlay {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1000;
+  display: none;
+}
+
+.confirmation {
+  color: #FFF;
+  display: none;
+}
+
+.error {
+  color: #FF4000;
+}
+
+.gps_ring {
+    border: 3px solid #AAA;
+    -webkit-border-radius: 300px;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left:50%;
+    top:10%;
+    transform: translate(50%, 0);
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.0
+}
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.0, 1.0); opacity: 0.0;}
+}
+
+/* END OF REGISTRATION */
 
 
+/* START OF BOOTSTRAP NARROW */
+/* Space out content a bit */
 
 
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
 
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
 
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+  .jumbotron {
+    min-height: 300px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
 
+/* Main marketing message and sign up button */
+.jumbotron {
+  border-bottom: 1px solid #e5e5e5;
+  background-image: url("/img/header_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border-radius: 0px;
 
+}
+.jumbotron .btn {
+  font-size: 21px;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  border-radius: 0px;
+  border-width: 3px;
+
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+  text-align: center;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/* END OF BOOTSTRAP NARROW */
 
 
 

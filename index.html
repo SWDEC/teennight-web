@@ -20,33 +20,69 @@
 </head>
 
 <body>
+    <div id="busy-overlay" class="busy-overlay">
+        <div class="gps_ring"></div>
+    </div>
+
     <!----START of BOOSTRAP TEMPLATE ---------------------->
-    <div class="container">
-        <div class="header clearfix">
-            <!--
-            <nav>
-                <ul class="nav nav-pills pull-right">
-                    <li role="presentation" class="active"><a href="#">Home</a></li>
-                    <li role="presentation"><a href="#">About</a></li>
-                    <li role="presentation"><a href="#">Contact</a></li>
-                </ul>
-            </nav>^
-            -->
-            <h3 class="text-muted">Teennight 2017</h3>
-        </div>
 
-        <div class="jumbotron">
-            <p><a class="btn btn-lg btn-success" href="#" role="button">JETZT ANMELDEN</a></p>
-        </div>
-        
-        <div class="row marketing">
-            <h4><a href="/flyer/2017_Teennight_web.pdf">Flyer downloaden!</a></h4>
-        </div>
 
-        <div class="row marketing"> <!-- REGISTRATION START -->
-            <div id="busy-overlay" class="busy-overlay">
-                <div class="gps_ring"></div>
+    <div class="container shadow">
+        <nav class="navbar navbar-fixed-top">
+            <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Die Teennight</a></li>
+                    <li><a href="#Anmeldung">Anmeldung</a></li>
+                    <!--<li><a href="#contact">Anfahrt</a></li>-->
+                    <!--<li><a href="#contact">Für Eltern</a></li>-->
+                    <li><a href="#Mitarbeiter">Für Mitarbeiter</a></li>
+                    <li><a href="#impressum">Impressum</a></li>
+                </ul>
+            </div>
+            </div>
+            <!--/.nav-collapse -->
+        </nav>
+
+
+
+        <div class="headerbox">
+            <!--<p><a class="btn btn-lg btn-success" href="#" role="button">JETZT ANMELDEN</a></p>-->
+        </div>
+
+
+
+        <!-- DESCRIPTIVE TEXT -->
+        <div class="row marketing teasertext">
+            <p>EINE GANZE NACHT LANG DREH'N WIR AUF</p>
+            <p>UND BIETEN FÜR ALLE TEENS <span class="teasertextcolored"AB 13 JAHREN</span></p>
+            <p>EIN NONSTOP-HAMMER-PROGRAMM VON <span class="teasertextcolored">22:00 UHR BIS 8:30 UHR!</span></p>
+
+            <p>DAS KOSTET DICH <span class="teasertextcolored">NUR 14,99€</span></p>
+            <p>(AB DEM 21. JUNI 2017 ZAHLST DU 17,99€)</p>
+        </div>
+
+        <div class="row marketing">
+            <a class="btn btn-lg btn-success" target="_blank" href="/docs/2017_Teennight_web.pdf" role="button">FLYERN ANSCHAUEN</a>
+            
+        </div>
+
+        <div class="row video">
+            <iframe class="ytiframe" src="https://www.youtube.com/embed/-SK3FMSvAn4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div id="Anmeldung" class="row marketing">
+            <!-- REGISTRATION START -->
+
             <div class="step-counter-box">
                 <div id="step-1" class="step-counter-step step-counter-active">
                     <div class="step-content">1</div>
@@ -80,11 +116,23 @@
                 <span id="placeholder-name">...</span>, du hast es fast geschafft! <br> In kürze bekommst du eine E-Mail,
                 in der steht, wie es weitergeht!
             </div>
-        </div> <!-- REGISTRATION END -->
+        </div>
+        <!-- REGISTRATION END -->
+
+        <div class="stripe1">
+        </div>
+
+        <!-- FÜR MITARBEITER -->
+        <div id="Mitarbeiter" class="row">
+            <h2>Du bist Teenkreis-Mitarbeiter?</h2>
+            <p>Dann wirf vielleicht mal einen Blick in die <a href="/docs/TK-MA_Teennight_17.pdf" target="_blank">Teenkreis-Mitarbeiter-Info</a>.</p>
+
+
+        </div>
 
 
         <footer class="footer">
-            <p>&copy; 2017 - Südwestdeutscher Jugendverband "Entscheiden für Christus" - <a href="http://www.swdec.de/menue/impressum/">Impressum</a></p>
+            <p id="impressum">&copy; 2017 - Südwestdeutscher Jugendverband "Entscheiden für Christus" - <a href="http://www.swdec.de/menue/impressum/">Impressum</a></p>
         </footer>
 
     </div>

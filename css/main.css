@@ -9,7 +9,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: #AAA;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -79,25 +79,15 @@ textarea {
 }
 
 /* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-/* COMING FROM REGISTRATION - NNEEDS REWORK! */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
   background-color: #262626;
+  position: relative;
+  background: url("/img/background_sw.jpg");
+  background-size: cover;
+  color: #AAA;
 
 }
 
@@ -169,6 +159,7 @@ body {
   background-color: black;
   z-index: 1000;
   display: none;
+  opacity: 0.8;
 }
 
 .confirmation {
@@ -182,64 +173,101 @@ body {
 
 .gps_ring {
     border: 3px solid #AAA;
-    -webkit-border-radius: 300px;
-    height: 200px;
-    width: 200px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
     position: absolute;
     left:50%;
     top:10%;
-    transform: translate(50%, 0);
+    transform: translate(-300, 0);
     -webkit-animation: pulsate 1s ease-out;
     -webkit-animation-iteration-count: infinite; 
+    animation: pulsate 1s ease-out;
+    animation-iteration-count: infinite; 
     opacity: 0.0
 }
-@-webkit-keyframes pulsate {
-    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+@keyframes pulsate {
+    0% {transform: scale(0.1, 0.1); opacity: 0.0;}
     50% {opacity: 1.0;}
-    100% {-webkit-transform: scale(1.0, 1.0); opacity: 0.0;}
+    100% {transform: scale(1.0, 1.0); opacity: 0.0;}
 }
 
 /* END OF REGISTRATION */
 
 
 /* START OF BOOTSTRAP NARROW */
-/* Space out content a bit */
 
+.teasertext {
+    padding-top: 30px;
+   padding-bottom: 30px;
+    transform: rotate(356deg);
+    color: #DDD;
+}
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 15px;
-  padding-left: 15px;
+.teasertext p {
+    text-align: center; 
+    font-size: 1.2em;
+     padding-left: 0px;
+     font-weight: bold;
+}
+
+.teasertextcolored {
+    color: #019ee0;
+    font-weight: bolder;
 }
 
 /* Custom page header */
 .header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
+  background-color: black;
+  opacity: 0.8;
 }
 
 /* Custom page footer */
 .footer {
   padding-top: 19px;
+  padding-bottom: 30px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
+  background-color: #151515;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
+
 /* Customize container */
+.container {
+    background-color: #262626;
+}
+
+.shadow {
+        box-shadow: 0px 0px 250px 100px black;
+}
+
+.stripe1 {
+    background-image: url("/img/stripe1.jpg");
+    background-size: cover;
+    height: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
 @media (min-width: 768px) {
   .container {
     max-width: 730px;
   }
-  .jumbotron {
+
+  .ytiframe {
+      width: 730px; 
+      height: 410px;
+  }
+
+  .headerbox {
     min-height: 300px;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 }
 .container-narrow > hr {
@@ -247,15 +275,17 @@ body {
 }
 
 /* Main marketing message and sign up button */
-.jumbotron {
+.headerbox {
   border-bottom: 1px solid #e5e5e5;
   background-image: url("/img/header_bg.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   border-radius: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
 
 }
-.jumbotron .btn {
+.btn {
   font-size: 21px;
   background-color: transparent;
   color: white;
@@ -287,11 +317,16 @@ body {
   .header {
     margin-bottom: 30px;
   }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
+
+  .headerbox {
     border-bottom: 0;
   }
 }
+
+.navbar {
+    opacity: 0.8;
+}
+
 
 /* END OF BOOTSTRAP NARROW */
 
